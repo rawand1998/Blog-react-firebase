@@ -12,7 +12,7 @@ function SignIn(){
     return (
         <div>
             <form>
-            <input type="text" value={email} onChange={(e)=>setEmail(e.target.value)}/>
+            <input type="email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
             <input type="password" value={password} onChange={(e)=>setPassword(e.target.value)} />
             <button onClick={handleSubmit}>Login</button>
             </form>
