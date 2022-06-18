@@ -6,6 +6,7 @@ import {
     signInWithEmailAndPassword,
     createUserWithEmailAndPassword,
   } from "firebase/auth";
+  import {getFirestore} from 'firebase/firestore';
 const firebaseConfig = {
     apiKey: "AIzaSyDx2jeMLUPTNRBATKOaMnAoU6YEfHqbdOk",
     authDomain: "blog-72397.firebaseapp.com",
@@ -18,3 +19,4 @@ const firebaseConfig = {
   export const auth = getAuth(app)
   export default firebase;
 
+export const  db= getFirestore(app)
