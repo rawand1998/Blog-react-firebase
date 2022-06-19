@@ -11,7 +11,9 @@ import { db } from "../firebase";
 
 export const logInWithEmailAndPassword = async (email, password) => {
   try {
-    await signInWithEmailAndPassword(auth, email, password);
+    await signInWithEmailAndPassword(auth, email, password).then(()=>{
+      localStorage.setItem("isAuth",true)
+    });
   } catch (err) {
     console.error(err);
     alert(err.message);
