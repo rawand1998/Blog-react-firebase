@@ -1,14 +1,17 @@
 import React,{useState} from 'react';
 import {auth,registerWithEmailAndPassword} from '../firebase'
 import {register} from '../hooks'
+import { useNavigate } from "react-router-dom";
+
 function SignUp(){
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
-    // const [userName,setUserName] = useState('')
+    let navigate = useNavigate();
   
     const handleSubmit = ()=>{
         
         register(email,password)
+        navigate("/")
      
     }
     return (

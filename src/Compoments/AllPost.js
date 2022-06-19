@@ -4,6 +4,7 @@ import { getDocs, collection, deleteDoc, doc } from "firebase/firestore";
 function AllPost() {
   const [postsList, setPostsList] = useState([]);
   const postRef = collection(db, "posts");
+  
   const deletePost = async (id) => {
     const postDoc = doc(db, "posts", id);
     await deleteDoc(postDoc);

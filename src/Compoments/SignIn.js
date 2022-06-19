@@ -1,13 +1,15 @@
 import React,{useState} from 'react';
 import {logInWithEmailAndPassword} from '../hooks'
+import { useNavigate } from "react-router-dom";
+
 function SignIn(){
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
-  
+    let navigate = useNavigate();
     const handleSubmit = (e)=>{
-        console.log(email,password)
+       
         logInWithEmailAndPassword(email,password)
-     
+        navigate("/")
     }
     return (
         <div>
