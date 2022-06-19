@@ -22,17 +22,17 @@ function AllPost() {
     <div className="homePage">
       {postsList.map((post) => {
         return (
-          <div className="post" key={post.id}>
+          <div className="post" >
             <div className="postHeader">
               <div className="title">
-                <h1> {post.title}</h1>
-                <button onClick={() => deletePost(post.id)}>delete</button>
+                <h3> {post.title}</h3>
+                <button onClick={() => deletePost(post.id)} className="btn-delete">Delete</button>
               </div>
             </div>
-            <div className="postTextContainer"> {post.text} </div>
+            <div className="postTextContainer">{post.text} </div>
           </div>
         );
-      })}
+      })} 
     </div>
   );
 }
