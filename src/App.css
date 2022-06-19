@@ -1,3 +1,6 @@
+body{
+  background-color: #213E49;
+}
 .login-container{
   background-image: url('./images/image\ 1.png');
   background-repeat: no-repeat;
@@ -29,7 +32,17 @@
   font-family: Iceland;
   font-size: 35px;
   border-bottom:1px solid #fff;
-  width:100px
+  width:150px;
+  padding-bottom: 5px;
+}
+.login-word-post{
+  padding-left:10px;
+  color: #fff;
+  font-family: Iceland;
+  font-size: 35px;
+  border-bottom:1px solid #fff;
+  width:250px;
+  padding-bottom: 5px;
 }
 .login-welocme{
   color: #fff;
