@@ -9,7 +9,8 @@ function App() {
   
   return (
    <Router>
-    <nav>
+    <nav className="nav">
+      <h3>Logo</h3>
       <Link to="/"></Link>
       <Link to="/login">Login</Link>
       <Link to="/register">register</Link>
