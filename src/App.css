@@ -1,8 +1,8 @@
-body{
-  background-color: #213E49;
+body {
+  background-color: #213e49;
 }
-.login-container{
-  background-image: url('./images/image\ 1.png');
+.login-container {
+  background-image: url("./images/image\ 1.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -14,108 +14,143 @@ body{
 
   justify-content: flex-end;
 }
-.login{
+.login {
   display: flex;
   flex-direction: column;
   justify-items: flex-end;
-  
+
   margin-right: 4%;
   width: 450px;
   height: 400px;
-  background-image: linear-gradient(#35494D, #C9C9C9);
-  border-radius:25px;
+  background-image: linear-gradient(#35494d, #c9c9c9);
+  border-radius: 25px;
   margin-top: 15%;
 }
-.login-word{
-  padding-left:10px;
+.login-word {
+  padding-left: 10px;
   color: #fff;
   font-family: Iceland;
   font-size: 35px;
-  border-bottom:1px solid #fff;
-  width:150px;
+  border-bottom: 1px solid #fff;
+  width: 150px;
   padding-bottom: 5px;
 }
-.login-word-post{
-  padding-left:10px;
+.login-word-post {
+  padding-left: 10px;
   color: #fff;
   font-family: Iceland;
   font-size: 35px;
-  border-bottom:1px solid #fff;
-  width:250px;
+  border-bottom: 1px solid #fff;
+  width: 250px;
   padding-bottom: 5px;
 }
-.login-welocme{
+.login-welocme {
   color: #fff;
-  padding-left:10px;
-  margin-top:-5%
+  padding-left: 10px;
+  margin-top: -5%;
 }
-.login-form{
-display: flex;
+.login-form {
+  display: flex;
 
-flex-direction: column;
-width: 100%;
-
+  flex-direction: column;
+  width: 100%;
 }
-.login-form input{
-  height:30px;
-  width:90%;
-  border:1px solid #C9C9C9;
-  margin-bottom:15px;
-  border-radius:5px;
-  background-image: linear-gradient(#C4C4C4, #C9C9C9);
-  margin-left:15px;
+.login-form input {
+  height: 30px;
+  width: 90%;
+  border: 1px solid #c9c9c9;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-image: linear-gradient(#c4c4c4, #c9c9c9);
+  margin-left: 15px;
   margin-top: 10px;
-
 }
-.login-form button{
-  height:30px;
-  width:90%;  border:1px solid #C9C9C9;
-  margin-bottom:15px;
-  border-radius:5px;
-  background-color: #A5D9D0;
-  margin-left:15px;
-  margin-top:15px
+.login-form button {
+  height: 30px;
+  width: 90%;
+  border: 1px solid #c9c9c9;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: #a5d9d0;
+  margin-left: 15px;
+  margin-top: 15px;
 }
-.login-label
-{
-  padding-left:15px;
+.login-label {
+  padding-left: 15px;
   color: #fff;
 }
-.homePage{
- 
+.all-post-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.homePage {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
+
   justify-content: space-between;
-width: 350px;
-margin-top:100px;
-margin-left: 10%;
-border: 1px solid #ddd;
-background-color: #fff;
-box-shadow:2px 2px 2px 2px #fff;
-
+  width: 30px;
+  margin-top: 100px;
+  margin-left: 10%;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px 2px #fff;
 }
 
-.post{
-
-}
-.title{
+.title {
   display: flex;
   flex-direction: row;
-     width: 100%;
-  background-color: #fff
+  width: 100%;
 }
-.btn-delete{
+.btn-delete {
   width: 25%;
-  height: 25%;
- border:none;
- border-radius: 25px;
- padding:10px 20px;
- margin-left:35%;
- margin-top: 5%;
- color:#f00;
- font-weight:bold;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-left: 40%;
+  margin-top: 5%;
+  color: #f00;
+  font-weight: bold;
+  text-align: center;
 }
-.postTextContainer{
+.postTextContainer {
   padding-bottom: 15px;
+  padding-left: 15px;
+}
+.postHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 350px;
+  background-color: #fff;
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+.postTitle {
+  padding-left: 15px;
+  text-transform: capitalize;
+}
+.nav {
+  color: #fff;
+  text-decoration: none;
+
+  display: flex;
+  padding-left: 15px;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+.nav-link{
+  display: flex;
+  flex-direction: row;
+justify-content:center;
+justify-items: center;
+margin-right: 15px;
+margin-top:15px
+  
+}
+a:-webkit-any-link{
+  text-decoration: none;
+  color: #fff;
+  padding-left: 15px;
 }
