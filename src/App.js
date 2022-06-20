@@ -11,10 +11,13 @@ function App() {
    <Router>
     <nav className="nav">
       <h3>Logo</h3>
+      <div className="nav-link">
       <Link to="/"></Link>
       <Link to="/login">Login</Link>
       <Link to="/register">register</Link>
       <Link to="/create/post">Create Post</Link>
+      </div>
+    
     </nav>
     <Routes>
     <Route path="/" element={<AllPost />}/>
