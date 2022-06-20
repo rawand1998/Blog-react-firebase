@@ -15,7 +15,7 @@ function AllPost() {
       setPostsList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
     getPost();
-    console.log("postList", postsList);
+   
   }, [deletePost]);
 
   return (
